@@ -1,1 +1,25 @@
-{}
+{
+    "color": {
+        "primary": {
+            "base": {
+                "$value": "#0076be",
+                "$description": "color base de Blue Wave",
+                "$type": "color"
+            }
+        },
+        "secondary": {
+            "base": {
+                "$value": "#FF0000",
+                "$description": "Color secundario de Blue Wave",
+                "$type": "color"
+            }
+        },
+        "brand": {
+            "base": {
+                "$value": "#002F6C",
+                "$description": "Color de los botones de la marca",
+                "$type": "color"
+            }
+        }
+    }
+}
