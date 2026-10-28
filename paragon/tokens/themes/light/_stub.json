@@ -2,14 +2,14 @@
     "color": {
         "primary": {
             "base": {
-                "$value": "#0076be",
+                "$value": "#002F6C",
                 "$description": "color base de Blue Wave",
                 "$type": "color"
             }
         },
         "secondary": {
             "base": {
-                "$value": "#FF0000",
+                "$value": "#0076be",
                 "$description": "Color secundario de Blue Wave",
                 "$type": "color"
             }
