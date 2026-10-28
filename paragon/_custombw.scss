@@ -1,0 +1,36 @@
+// Ejemplo de clases utilitarias o de componentes personalizados de Blue Wave
+.bw-bg-primary {
+    background-color: var(--pgn-color-primary-base) !important;
+}
+
+.bw-text-primary {
+    color: var(--pgn-color-primary-base) !important;
+}
+
+.bw-bg-brand {
+    background-color: var(--pgn-color-brand-base) !important;
+}
+
+.bw-btn-custom {
+    background-color: var(--pgn-color-primary-base);
+    color: var(--pgn-color-white);
+    border-radius: var(--pgn-size-border-radius-base);
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+        background-color: var(--pgn-color-primary-700);
+    }
+}
+
+/*MFE learning Dasboard*/
+
+//Card que muestran el titulo
+.bw-card-title {
+    color: var(--pgn-color-primary-base);
+    font-family: 'Open Sans';
+    font-size: 24px !important;
+}
+
+.bw-card-title:hover {
+    color: var(--pgn-color-brand-base);
+}
