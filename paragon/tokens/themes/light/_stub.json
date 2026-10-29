@@ -9,7 +9,7 @@
         },
         "secondary": {
             "base": {
-                "$value": "##00A9E0",
+                "$value": "#00A9E0",
                 "$description": "Color secundario de Blue Wave, es el azul bajo. ",
                 "$type": "color"
             }
