@@ -42,3 +42,34 @@
 .bg-color-bw:hover {
     background-color: var(--pgn-color-secondary-base);
 }
+
+/*Buttons*/
+.btn-primary-bw {
+    background-color: var(--pgn-color-secondary-base) !important;
+    border-color: var(--pgn-color-secondary-base) !important;
+}
+
+/*Lupa
+Hover con color secundario.
+*/
+.btn-icon-bw {}
+
+/*Borde de linea Azul
+Componentes:
+ - Dashboard --> Footer y Header
+ - 
+*/
+.line-border-bw {
+    border-bottom: 2px solid var(--pgn-color-primary-base) !important;
+}
+
+/*Menu de usuario - item seleccionado con color secundario
+Componentes:
+ - LearnerDashboardHeader --> User Menu (Go back to Blue Wave)
+*/
+.dropdown-item.active,
+.dropdown-item:active,
+.bw-menu-secondary {
+    background-color: var(--pgn-color-secondary-base) !important;
+    color: var(--pgn-color-white) !important;
+}
