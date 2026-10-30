@@ -125,16 +125,13 @@
         color: var(--pgn-color-gray-700) !important;
         margin-right: 1rem;
     }
+
+    .nav-link:hover {
+        color: var(--png-color-active, #fff) !important;
+    }
 }
 
-/*Logo del Header*/
-.site-header-desktop .logo {
-    padding: 0px !important;
-}
 
-#root header .logo {
-    height: 3rem !important;
-}
 
 // =============================================================================
 // 3. OVERRIDES POR MFE (Clases nativas de cada MFE - Sin tocar JSX)
