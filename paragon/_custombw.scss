@@ -1,16 +1,43 @@
-// Ejemplo de clases utilitarias o de componentes personalizados de Blue Wave
+// =============================================================================
+// 1. CLASES UTILITARIAS GLOBALES (Prefijo .bw-*)
+// Uso: Clases reutilizables que se agregan manualmente en el JSX cuando un
+// elemento no tiene una clase nativa específica.
+// =============================================================================
+
+/* Colores de fondo */
 .bw-bg-primary {
     background-color: var(--pgn-color-primary-base) !important;
-}
-
-.bw-text-primary {
-    color: var(--pgn-color-primary-base) !important;
 }
 
 .bw-bg-brand {
     background-color: var(--pgn-color-brand-base) !important;
 }
 
+.bw-bg-primary-hover,
+.bg-color-bw {
+    background-color: var(--pgn-color-primary-base);
+
+    &:hover {
+        background-color: var(--pgn-color-secondary-base);
+    }
+}
+
+/* Textos */
+.bw-text-primary {
+    color: var(--pgn-color-primary-base) !important;
+}
+
+/* Bordes y divisores
+   Componentes donde se aplica:
+   - Dashboard --> Footer y Header
+   - MasqueradeBar
+*/
+.bw-line-border,
+.line-border-bw {
+    border-bottom: 2px solid var(--pgn-color-primary-base) !important;
+}
+
+/* Botones personalizados */
 .bw-btn-custom {
     background-color: var(--pgn-color-primary-base);
     color: var(--pgn-color-white);
@@ -22,77 +49,96 @@
     }
 }
 
-/*MFE learning Dasboard*/
-
-//Card que muestran el titulo
-.bw-card-title {
-    color: var(--pgn-color-primary-base);
-    font-family: 'Calibri';
-    font-size: 24px !important;
-}
-
-.bw-card-title:hover {
-    color: var(--pgn-color-secondary-base);
-}
-
-.bg-color-bw {
-    background-color: var(--pgn-color-primary-base);
-}
-
-.bg-color-bw:hover {
-    background-color: var(--pgn-color-secondary-base);
-}
-
-/*Buttons*/
+.bw-btn-secondary,
 .btn-primary-bw {
     background-color: var(--pgn-color-secondary-base) !important;
     border-color: var(--pgn-color-secondary-base) !important;
 }
 
-/*Lupa
-Hover con color secundario.
-*/
+/* Iconos / Lupa con hover secundario */
+.bw-btn-icon,
 .btn-icon-bw {}
 
-/*Borde de linea Azul
-Componentes:
- - Dashboard --> Footer y Header
- - 
-*/
-.line-border-bw {
-    border-bottom: 2px solid var(--pgn-color-primary-base) !important;
-}
 
-/* === Menu de usuario Inicio=====*/
-/* item seleccionado con color secundario
-Componentes:
- - LearnerDashboardHeader --> User Menu (Go back to Blue Wave)
-*/
-.dropdown-item.active,
-.dropdown-item:active,
-.bw-menu-secondary {
-    background-color: var(--pgn-color-secondary-base) !important;
-    color: var(--pgn-color-white) !important;
-}
+// =============================================================================
+// 2. OVERRIDES GLOBALES DE PARAGON Y COMPONENTES COMPARTIDOS (Sin tocar JSX)
+// Uso: Afectan a todos los MFEs (Header, Footer, Dropdowns de Paragon, etc.)
+// =============================================================================
 
-
+/* === Menú de usuario Inicio (@edx/frontend-component-header) === */
+/* Ítem seleccionado con color secundario (ej. Go back to Blue Wave) */
 .dropdown-item {
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
+
+    &.active,
+    &:active,
+    &.bw-menu-secondary {
+        background-color: var(--pgn-color-secondary-base) !important;
+        color: var(--pgn-color-white) !important;
+    }
+}
+/* === Menú de usuario Fin === */
+
+
+// =============================================================================
+// 3. OVERRIDES POR MFE (Clases nativas de cada MFE - Sin tocar JSX)
+// Uso: Cada bloque agrupa las clases nativas propias de ese MFE.
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// 3.1 MFE: Learner Dashboard (frontend-app-learner-dashboard)
+// -----------------------------------------------------------------------------
+
+/* Título principal de lista ("My Workshops") - CoursesPanel */
+.course-list-title {}
+
+/* Título de cada tarjeta de taller - CourseCardTitle
+   Nota: .course-card-title es la clase nativa; se mantiene .bw-card-title por compatibilidad */
+a.course-card-title,
+.course-card-title,
+.bw-card-title {
+    color: var(--pgn-color-primary-base);
+    font-family: 'Calibri', sans-serif;
+    font-size: 24px !important;
+
+    &:hover {
+        color: var(--pgn-color-secondary-base);
+    }
 }
 
-/* === Menu de usuario FIN =====*/
-
-
-/*Card de talleres*/
-/* Selecciona cualquier <a> dentro de .pgn__action-row (incluso si hay un div intermedio) */
+/* Botones de acción en tarjetas de taller - CourseCardActions
+   Selecciona cualquier <a> dentro de .pgn__action-row (incluso si hay un div intermedio) */
 .pgn__action-row {
     a {
         background-color: var(--pgn-color-primary-base) !important;
         color: var(--pgn-color-white) !important;
+        border-color: var(--pgn-color-primary-base) !important;
 
         &:hover {
             background-color: var(--pgn-color-secondary-base) !important;
+            border-color: var(--pgn-color-secondary-base) !important;
         }
     }
 }
+
+
+// -----------------------------------------------------------------------------
+// 3.2 MFE: Learning / Courseware (frontend-app-learning) - [Futuro]
+// -----------------------------------------------------------------------------
+
+
+// -----------------------------------------------------------------------------
+// 3.3 MFE: Account / Profile (frontend-app-account / profile) - [Futuro]
+// -----------------------------------------------------------------------------
+
+
+
+// -----------------------------------------------------------------------------
+// 3.2 MFE: Learning / Courseware (frontend-app-learning) - [Futuro]
+// -----------------------------------------------------------------------------
+
+
+// -----------------------------------------------------------------------------
+// 3.3 MFE: Account / Profile (frontend-app-account / profile) - [Futuro]
+// -----------------------------------------------------------------------------
