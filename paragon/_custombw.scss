@@ -1,7 +1,7 @@
 // =============================================================================
 // 1. CLASES UTILITARIAS GLOBALES (Prefijo .bw-*)
-// Uso: Clases reutilizables que se agregan manualmente en el JSX cuando un
-// elemento no tiene una clase nativa específica.
+// Uso: Clases reutilizables que se agregan manualmente en el JSX o en Plugins
+// cuando un elemento no tiene una clase nativa específica.
 // =============================================================================
 
 /* Colores de fondo */
@@ -59,6 +59,44 @@
 .bw-btn-icon,
 .btn-icon-bw {}
 
+/* === [BW CUSTOM] Selector de Idioma Global Inicio ===
+   Componentes donde se aplica:
+   - Plugin Global: bluewave_language_selector.py (env.config.jsx)
+   - Componente MFE: BwLanguageSelector (bajo el Header a la derecha)
+*/
+.bw-lang-selector-bar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0.5rem 1.5rem 0;
+}
+
+.bw-lang-selector-btn {
+    background-color: var(--pgn-color-primary-base) !important;
+    color: var(--pgn-color-white) !important;
+    border: 1px solid var(--pgn-color-primary-base) !important;
+    border-radius: var(--pgn-size-border-radius-base);
+    padding: 0.35rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+
+    &:hover,
+    &:focus {
+        background-color: var(--pgn-color-secondary-base) !important;
+        border-color: var(--pgn-color-secondary-base) !important;
+        outline: none;
+    }
+
+    option {
+        background-color: var(--pgn-color-white);
+        color: var(--pgn-color-primary-base);
+    }
+}
+
+/* === [BW CUSTOM] Selector de Idioma Global Fin === */
+
 
 // =============================================================================
 // 2. OVERRIDES GLOBALES DE PARAGON Y COMPONENTES COMPARTIDOS (Sin tocar JSX)
@@ -78,7 +116,16 @@
         color: var(--pgn-color-white) !important;
     }
 }
+
 /* === Menú de usuario Fin === */
+
+/* Sobrescribir los estilos del HELP en el HEADER */
+.secondary-menu-container {
+    .nav-link {
+        color: var(--pgn-color-gray-700) !important;
+        margin-right: 1rem;
+    }
+}
 
 
 // =============================================================================
@@ -121,17 +168,6 @@ a.course-card-title,
         }
     }
 }
-
-
-// -----------------------------------------------------------------------------
-// 3.2 MFE: Learning / Courseware (frontend-app-learning) - [Futuro]
-// -----------------------------------------------------------------------------
-
-
-// -----------------------------------------------------------------------------
-// 3.3 MFE: Account / Profile (frontend-app-account / profile) - [Futuro]
-// -----------------------------------------------------------------------------
-
 
 
 // -----------------------------------------------------------------------------
