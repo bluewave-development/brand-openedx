@@ -127,6 +127,14 @@
     }
 }
 
+/*Logo del Header*/
+.site-header-desktop .logo {
+    padding: 0px !important;
+}
+
+#root header .logo {
+    height: 4rem !important;
+}
 
 // =============================================================================
 // 3. OVERRIDES POR MFE (Clases nativas de cada MFE - Sin tocar JSX)
