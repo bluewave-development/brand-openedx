@@ -209,7 +209,7 @@ a.course-card-title,
     &:hover,
     &:focus,
     &.active {
-        border-bottom-color: #FCB415;
+        border-bottom-color: #FCB415 !important;
     }
 }
 
