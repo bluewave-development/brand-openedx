@@ -23,7 +23,7 @@
         },
         "gray": {
             "base": {
-                "$value": "#7F7F7F.",
+                "$value": "#7F7F7F",
                 "$description": "Color base de los textos de la plataforma. Indicado en los requerimientos",
                 "$type": "color"
             }
