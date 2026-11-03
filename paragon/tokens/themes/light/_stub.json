@@ -20,6 +20,13 @@
                 "$description": "Color de los botones de la marca",
                 "$type": "color"
             }
+        },
+        "gray": {
+            "base": {
+                "$value": "#7F7F7F.",
+                "$description": "Color base de los textos de la plataforma. Indicado en los requerimientos",
+                "$type": "color"
+            }
         }
     }
 }
