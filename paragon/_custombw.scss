@@ -195,24 +195,6 @@ a.course-card-title,
     }
 }
 
-
-// 1. Sección superior: Course Tools
-/*.course-outline-tab section:has(#courseHome-launchTourLink) {
-    border: 2px solid var(--pgn-color-primary-base) !important;
-    border-bottom: 0px !important;
-    border-radius: 8px 8px 0 0 !important; // Esquinas redondeadas solo arriba
-    margin-bottom: 0px !important; // Elimina el gap de 24px (mb-4)
-    padding: 1rem 1rem 0.5rem 1rem !important;
-}*/
-
-// 2. Sección inferior: Important Dates
-/*.course-outline-tab section:has(#courseHome-dates) {
-    border: 2px solid var(--pgn-color-primary-base) !important;
-    border-top: 0px !important;
-    border-radius: 0 0 8px 8px !important; // Esquinas redondeadas solo abajo
-    padding: 0.5rem 1rem 1rem 1rem !important;
-}*/
-
 //Prueba para poner el cuadro en la sección de Important Dates y Course Tools
 @media (min-width: 768px) {
     #root .col-md-4 {
@@ -221,10 +203,25 @@ a.course-card-title,
     }
 }
 
+// Cambiar el color de la línea al seleccionar una tab en los cursos (course tools)
+.nav-link {
+
+    &:hover,
+    &:focus,
+    &.active {
+        border-bottom-color: #FCB415;
+    }
+}
+
 // Título principal del taller (Cyber Security Workshop)
 [role="heading"][aria-level="1"] {
     color: var(--pgn-color-primary-base) !important;
     font-size: 1.75rem !important;
+}
+
+//Subtitulo del taller, donde dice "Begin your course today"
+.pgn__card-header-title-md {
+    font-size: 1.5rem !important;
 }
 
 // -----------------------------------------------------------------------------
