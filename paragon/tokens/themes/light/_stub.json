@@ -22,6 +22,10 @@
             }
         },
         "gray": {
+            "700": {
+                "$value": "#7F7F7F",
+                "$description": "Gray color of level 700."
+            },
             "base": {
                 "$value": "#7F7F7F",
                 "$description": "Color base de los textos de la plataforma. Indicado en los requerimientos",
