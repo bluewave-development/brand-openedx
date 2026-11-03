@@ -178,6 +178,21 @@ a.course-card-title,
 // 3.2 MFE: Learning / Courseware (frontend-app-learning) - [Futuro]
 // -----------------------------------------------------------------------------
 
+//Eliminar el padding de la barra azul para dejarlo más pequeño
+.instructor-toolbar div div {
+
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+// Prueba del logo global de BW
+.logo {
+    padding: 0px !important;
+}
+
+.logo {
+    height: 3rem !important;
+}
 
 // -----------------------------------------------------------------------------
 // 3.3 MFE: Account / Profile (frontend-app-account / profile) - [Futuro]
