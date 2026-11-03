@@ -199,6 +199,15 @@ a.course-card-title,
 #courseHome-dates {
 
     border: 2px solid var(--pgn-color-primary-base) !important;
+    padding-left: .5rem !important;
+}
+
+
+// Borde para la sección de Course Tools
+.course-outline-tab section:has(#courseHome-launchTourLink) {
+    border: 2px solid var(--pgn-color-primary-base) !important;
+    padding-left: .5rem !important;
+
 }
 
 // Título principal del taller (Cyber Security Workshop)
