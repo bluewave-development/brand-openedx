@@ -195,19 +195,30 @@ a.course-card-title,
     }
 }
 
-//Encuadrar la sección de Important dats
-#courseHome-dates {
 
+// 1. Sección superior: Course Tools
+/*.course-outline-tab section:has(#courseHome-launchTourLink) {
     border: 2px solid var(--pgn-color-primary-base) !important;
-    padding-left: .5rem !important;
-}
+    border-bottom: 0px !important;
+    border-radius: 8px 8px 0 0 !important; // Esquinas redondeadas solo arriba
+    margin-bottom: 0px !important; // Elimina el gap de 24px (mb-4)
+    padding: 1rem 1rem 0.5rem 1rem !important;
+}*/
 
-
-// Borde para la sección de Course Tools
-.course-outline-tab section:has(#courseHome-launchTourLink) {
+// 2. Sección inferior: Important Dates
+/*.course-outline-tab section:has(#courseHome-dates) {
     border: 2px solid var(--pgn-color-primary-base) !important;
-    padding-left: .5rem !important;
+    border-top: 0px !important;
+    border-radius: 0 0 8px 8px !important; // Esquinas redondeadas solo abajo
+    padding: 0.5rem 1rem 1rem 1rem !important;
+}*/
 
+//Prueba para poner el cuadro en la sección de Important Dates y Course Tools
+@media (min-width: 768px) {
+    #root .col-md-4 {
+        border: 1px solid #002f6c !important;
+        height: min-content;
+    }
 }
 
 // Título principal del taller (Cyber Security Workshop)
