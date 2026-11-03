@@ -179,10 +179,12 @@ a.course-card-title,
 // -----------------------------------------------------------------------------
 
 //Eliminar el padding de la barra azul para dejarlo más pequeño
-.instructor-toolbar div div {
-
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
+[data-testid="instructor-toolbar"],
+.instructor-toolbar {
+    .container-xl {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
 }
 
 // Prueba del logo global de BW
