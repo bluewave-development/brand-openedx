@@ -234,6 +234,11 @@ a.course-card-title,
     font-size: 1.5rem !important;
 }
 
+//Botón del Resumen.
+.btn-brand:hover {
+    background-color: var(--pgn-color-secondary-base) !important;
+}
+
 // -----------------------------------------------------------------------------
 // 3.3 MFE: Account / Profile (frontend-app-account / profile) - [Futuro]
 // -----------------------------------------------------------------------------
