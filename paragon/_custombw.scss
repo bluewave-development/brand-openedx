@@ -95,8 +95,13 @@
     }
 }
 
-// colores para los titulos
+// colores para los titulos en la vista del detalle del taller
 .h3 {
+    color: var(--pgn-color-body-base) !important;
+}
+
+// Para el texto de "Pick up were you left off"
+.pgn__card-header-title-md {
     color: var(--pgn-color-body-base) !important;
 }
 
