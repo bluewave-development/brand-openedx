@@ -241,10 +241,23 @@ a.course-card-title,
 }
 
 // -----------------------------------------------------------------------------
-// 3.3 MFE: Autoring es del Studio
+// 3.3 MFE: Authoring (Studio)
 // -----------------------------------------------------------------------------
-.container-mw-xl .pgn__action-row {
-    background-color: transparent !important;
+// Restablece los enlaces del header de Studio para evitar que hereden
+// el fondo azul definido globalmente en .pgn__action-row a
+.studio-header .pgn__action-row {
+    a {
+        background-color: transparent !important;
+        border-color: transparent !important;
+        color: inherit !important;
+
+        &:hover,
+        &:focus {
+            background-color: transparent !important;
+            border-color: transparent !important;
+            color: inherit !important;
+        }
+    }
 }
 
 
