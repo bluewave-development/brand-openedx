@@ -242,8 +242,31 @@ a.course-card-title,
 }
 
 // -----------------------------------------------------------------------------
-// 3.3 MFE: Authoring / Studio (frontend-app-authoring) - [Futuro]
+// 3.3 MFE: Authoring / Studio (frontend-app-authoring)
 // -----------------------------------------------------------------------------
+#root .studio-header {
+    header.pgn__action-row a,
+    .pgn__action-row a,
+    .course-title-lockup,
+    a {
+        background: transparent !important;
+        background-color: transparent !important;
+        border-color: transparent !important;
+        box-shadow: none !important;
+        color: inherit !important;
+        text-decoration: none !important;
+
+        &:hover,
+        &:focus {
+            background: transparent !important;
+            background-color: transparent !important;
+            border-color: transparent !important;
+            box-shadow: none !important;
+            color: inherit !important;
+            text-decoration: none !important;
+        }
+    }
+}
 
 
 
