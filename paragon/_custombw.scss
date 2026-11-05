@@ -274,12 +274,16 @@ a.course-card-title,
 // 3.3 Catalog/Landing Page
 // -----------------------------------------------------------------------------
 .border-top {
-    border-top: 1px solid var(--pgn-color-primary-base) !important
+    border-top: 2px solid var(--pgn-color-primary-base) !important
 }
 
 
 .home-banner {
-    border-bottom: 1px solid var(--pgn-color-primary-base) !important
+    border-bottom: 2px solid var(--pgn-color-primary-base) !important
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(var(--pgn-color-primary-base), 0) !important;
 }
 
 // -----------------------------------------------------------------------------
