@@ -288,18 +288,10 @@ a.course-card-title,
     border-color: var(--pgn-color-primary-base) !important;
 }
 
-// // Fondo del cuadro principal
-// .home-banner::before {
-//     background-color: var(--pgn-color-secondary-base, var(--pgn-color-secondary-base)) !important;
-// }
-
-// .home-banner:before {
-//     background-color: var(--pgn-color-secondary-base, var(--pgn-color-secondary-base)) !important;
-// }
 
 // Fondo del cuadro principal (usando la variable nativa del MFE)
 :root {
-    --catalog-home-page-banner-background-color: var(--pgn-color-secondary-base);
+    --catalog-home-page-banner-background-color: var(--pgn-color-primary-base);
 }
 
 
