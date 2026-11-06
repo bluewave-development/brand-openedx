@@ -159,10 +159,16 @@
     flex-direction: column !important;
     align-items: center !important;
     text-align: center !important;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
 
     .container-fluid {
         order: 1;
         width: 100%;
+
+        img {
+            max-height: 34px !important;
+        }
     }
 
     &::before {
@@ -170,14 +176,14 @@
         content: "Copyright © 2026 Blue Wave International SDP Corporation. All Rights Reserved.";
         display: block;
         font-weight: 700;
-        font-size: 0.8125rem;
-        color: var(--pgn-color-gray-900, #212529);
+        font-size: 0.75rem;
+        color: black !important;
         text-align: center;
-        margin-top: 1rem;
-        margin-bottom: 0.5rem;
+        margin-top: 0.35rem;
+        margin-bottom: 0.25rem;
         width: 100%;
-        max-width: 1200px;
-        line-height: 1.4;
+        max-width: 1100px;
+        line-height: 1.3;
     }
 
     &::after {
@@ -185,11 +191,13 @@
         content: "Blue Wave International SDP Corporation is the sole and exclusive owner of all rights, title, and interest in and to the Materials of the Blue Wave Supplier Development Program, including all Intellectual Property Rights. The Materials of the Blue Wave Supplier Development Program, including any methodologies, documents, presentations, self-assessment tools, workshops, video recordings, website content, and designs are protected by copyright under the U.S. copyright laws and are the intellectual property of Blue Wave International SDP Corporation. Customers shall have no right or license to use any Blue Wave Supplier Development Program Materials except solely during the term of the agreement. All other rights in and to the Blue Wave Supplier Development Program Materials are expressly reserved by Blue Wave International SDP Corporation.";
         display: block;
         font-weight: 400;
-        font-size: 0.75rem;
+        font-size: 0.65rem;
+        color: black !important;
         text-align: center;
         width: 100%;
-        line-height: 1.5;
-        margin-bottom: 0.5rem;
+        max-width: 1100px;
+        line-height: 1.35;
+        margin-bottom: 0.25rem;
         padding: 0 1rem;
     }
 }
