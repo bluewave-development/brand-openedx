@@ -295,6 +295,25 @@ a.course-card-title,
 }
 
 
+.btn-primary {
+    --pgn-btn-color: var(--pgn-color-btn-text-primary);
+    --pgn-btn-bg: var(--pgn-color-btn-bg-secondary);
+    --pgn-btn-border-color: var(--pgn-color-btn-border-secondary);
+    --pgn-btn-hover-color: var(--pgn-color-btn-hover-text-primary);
+    --pgn-btn-hover-bg: var(--pgn-color-btn-hover-bg-secondary);
+    --pgn-btn-hover-border-color: var(--pgn-color-btn-hover-border-secondary);
+    --pgn-btn-disabled-color: var(--pgn-color-btn-disabled-text-primary);
+    --pgn-btn-disabled-bg: var(--pgn-color-btn-disabled-bg-secondary);
+    --pgn-btn-disabled-border-color: var(--pgn-color-btn-disabled-border-secondary);
+    --pgn-btn-active-color: var(--pgn-color-btn-active-text-primary);
+    --pgn-btn-active-bg: var(--pgn-color-btn-active-bg-secondary);
+    --pgn-btn-active-border-color: var(--pgn-color-btn-active-border-secondary);
+    --pgn-btn-focus-outline-color: var(--pgn-color-btn-focus-outline-secondary);
+    --pgn-btn-focus-color: var(--pgn-color-btn-focus-text-primary);
+    --pgn-btn-focus-border-color: var(--pgn-color-btn-focus-border-secondary);
+    --pgn-btn-focus-bg: var(--pgn-color-btn-focus-bg-secondary);
+}
+
 // -----------------------------------------------------------------------------
 // 3.3 MFE: Account / Profile (frontend-app-account / profile) - [Futuro]
 // -----------------------------------------------------------------------------
