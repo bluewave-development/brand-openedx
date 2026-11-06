@@ -284,14 +284,13 @@ a.course-card-title,
 }
 
 //Color de la barra de busqueda
-html {
-    -webkit-tap-highlight-color: rgba(var(--pgn-color-primary-base), 0) !important;
+.has-focus {
+    border-color: var(--pgn-color-primary-base) !important;
 }
 
-
 // Fondo del cuadro principal
-.home-banner:before {
-    background-color: var(--catalog-home-page-banner-background-color, var(--pgn-color-secondary-base));
+.home-banner::before {
+    background-color: var(--pgn-color-secondary-base, var(--pgn-color-secondary-base)) !important;
 }
 
 // -----------------------------------------------------------------------------
