@@ -150,6 +150,52 @@
     height: 3rem !important;
 }
 
+/* =============================================================================
+   Footer Compartido (@edx/frontend-component-footer)
+   Texto legal y copyright institucional de Blue Wave ubicado debajo de los logos
+   ============================================================================= */
+.footer {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+
+    .container-fluid {
+        order: 1;
+        width: 100%;
+    }
+
+    &::before {
+        order: 2;
+        content: "Copyright © 2026 Blue Wave International SDP Corporation. All Rights Reserved.";
+        display: block;
+        font-weight: 700;
+        font-size: 0.8125rem;
+        color: var(--pgn-color-gray-900, #212529);
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        width: 100%;
+        max-width: 1200px;
+        line-height: 1.4;
+    }
+
+    &::after {
+        order: 3;
+        content: "Blue Wave International SDP Corporation is the sole and exclusive owner of all rights, title, and interest in and to the Materials of the Blue Wave Supplier Development Program, including all Intellectual Property Rights. The Materials of the Blue Wave Supplier Development Program, including any methodologies, documents, presentations, self-assessment tools, workshops, video recordings, website content, and designs are protected by copyright under the U.S. copyright laws and are the intellectual property of Blue Wave International SDP Corporation. Customers shall have no right or license to use any Blue Wave Supplier Development Program Materials except solely during the term of the agreement. All other rights in and to the Blue Wave Supplier Development Program Materials are expressly reserved by Blue Wave International SDP Corporation.";
+        display: block;
+        font-weight: 400;
+        font-size: 0.75rem;
+        color: var(--pgn-color-gray-700, #495057);
+        text-align: center;
+        width: 100%;
+        max-width: 1200px;
+        line-height: 1.5;
+        margin-bottom: 0.5rem;
+        padding: 0 1rem;
+    }
+}
+
 // =============================================================================
 // 3. OVERRIDES POR MFE (Clases nativas de cada MFE - Sin tocar JSX)
 // Uso: Cada bloque agrupa las clases nativas propias de ese MFE.
@@ -275,12 +321,12 @@ a.course-card-title,
 // -----------------------------------------------------------------------------
 //Borde del footer
 .border-top {
-    border-top: 2px solid var(--pgn-color-primary-base) !important
+    border-top: 2px solid var(--pgn-color-primary-base) !important;
 }
 
 // Borde del header
 .home-banner {
-    border-bottom: 2px solid var(--pgn-color-primary-base) !important
+    border-bottom: 2px solid var(--pgn-color-primary-base) !important;
 }
 
 //Color de la barra de busqueda
