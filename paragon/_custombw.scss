@@ -291,7 +291,7 @@ a.course-card-title,
 
 // Fondo del cuadro principal (usando la variable nativa del MFE)
 :root {
-    --catalog-home-page-banner-background-color: var(--pgn-color-primary-base);
+    --catalog-home-page-banner-background-color: var(--pgn-color-primary-base) !important;
 }
 
 
