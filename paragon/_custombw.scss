@@ -293,6 +293,11 @@ a.course-card-title,
     background-color: var(--pgn-color-secondary-base, var(--pgn-color-secondary-base)) !important;
 }
 
+.home-banner:before {
+    background-color: var(--pgn-color-secondary-base, var(--pgn-color-secondary-base)) !important;
+}
+
+
 // -----------------------------------------------------------------------------
 // 3.3 MFE: Account / Profile (frontend-app-account / profile) - [Futuro]
 // -----------------------------------------------------------------------------
