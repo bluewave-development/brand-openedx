@@ -186,10 +186,8 @@
         display: block;
         font-weight: 400;
         font-size: 0.75rem;
-        color: var(--pgn-color-gray-700, #495057);
         text-align: center;
         width: 100%;
-        max-width: 1200px;
         line-height: 1.5;
         margin-bottom: 0.5rem;
         padding: 0 1rem;
@@ -340,8 +338,9 @@ a.course-card-title,
     --catalog-home-page-banner-background-color: var(--pgn-color-primary-base) !important;
 }
 
-
-.btn-primary {
+// Botón de búsqueda exclusivo del componente de Catalog (HomeBanner)
+.home-banner .pgn__searchfield__button,
+.home-banner .btn-primary {
     --pgn-btn-color: var(--pgn-color-btn-text-primary);
     --pgn-btn-bg: var(--pgn-color-btn-bg-secondary);
     --pgn-btn-border-color: var(--pgn-color-btn-border-secondary);
