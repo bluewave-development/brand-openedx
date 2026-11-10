@@ -114,6 +114,29 @@
 // =============================================================================
 
 /* === Menú de usuario Inicio (@edx/frontend-component-header) === */
+/* Limitar longitud del nombre de usuario en el botón del Header a ~16 caracteres con "..." */
+button.menu-trigger {
+    display: inline-block !important;
+    position: relative;
+    max-width: calc(16ch + 4.25rem);
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    vertical-align: middle;
+    padding-right: 1.75rem !important;
+
+    .avatar {
+        vertical-align: middle;
+    }
+
+    > svg {
+        position: absolute;
+        right: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
 /* Ítem seleccionado con color secundario (ej. Go back to Blue Wave) */
 .dropdown-item {
     padding-top: 0.5rem !important;
