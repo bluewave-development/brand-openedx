@@ -152,7 +152,7 @@ button.menu-trigger {
 
 /* === Menú de usuario Fin === */
 
-/* Sobrescribir los estilos del HELP en el HEADER */
+/* Sobrescribir los estilos del HELP y ocultar Sign Up en el HEADER */
 .secondary-menu-container {
     .nav-link {
         color: var(--pgn-color-gray-700) !important;
@@ -162,6 +162,17 @@ button.menu-trigger {
     .nav-link:hover {
         color: var(--png-color-active, #fff) !important;
     }
+
+    /* Ocultar opción de Sign Up / Registrarse sin depender del texto (multi-idioma) */
+    a[href*="/register"],
+    a.btn-outline-primary {
+        display: none !important;
+    }
+}
+
+/* Ocultar también el enlace de registro en el header móvil si aplica */
+.site-header-mobile a[href*="/register"] {
+    display: none !important;
 }
 
 /*Sobre escribir el tamaño del logo del header*/
