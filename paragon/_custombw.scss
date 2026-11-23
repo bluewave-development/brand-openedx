@@ -243,6 +243,32 @@ button.menu-trigger {
 // 3.1 MFE: Learner Dashboard (frontend-app-learner-dashboard)
 // -----------------------------------------------------------------------------
 
+/* Deshabilitar la línea gris inferior (box-shadow) del header en escritorio */
+.site-header-desktop {
+    box-shadow: none !important;
+}
+
+/* Botón "Workshops" en la navegación principal del Header (.main-nav):
+   Quitar el recuadro de fondo azul y mostrar la línea inferior amarilla (#FCB415) */
+.site-header-desktop .main-nav {
+    .nav-link {
+        background: transparent !important;
+        background-color: transparent !important;
+        color: var(--pgn-color-body-base, #212529) !important;
+        border-bottom: 4px solid transparent;
+    }
+
+    .expanded .nav-link,
+    .nav-link.active,
+    .nav-link:focus,
+    .nav-link:hover {
+        background: transparent !important;
+        background-color: transparent !important;
+        color: var(--pgn-color-body-base, #212529) !important;
+        border-bottom: 4px solid #FCB415 !important;
+    }
+}
+
 /* Título principal de lista ("My Workshops") - CoursesPanel */
 .course-list-title {}
 
