@@ -5,6 +5,7 @@
 // =============================================================================
 
 /* Colores de fondo */
+
 .bw-bg-primary {
     background-color: var(--pgn-color-primary-base) !important;
 }
@@ -16,34 +17,38 @@
 .bw-bg-primary-hover,
 .bg-color-bw {
     background-color: var(--pgn-color-primary-base);
-
     &:hover {
         background-color: var(--pgn-color-secondary-base);
     }
 }
 
+
 /* Textos */
+
 .bw-text-primary {
     color: var(--pgn-color-primary-base) !important;
 }
+
 
 /* Bordes y divisores
    Componentes donde se aplica:
    - Dashboard --> Footer y Header
    - MasqueradeBar
 */
+
 .bw-line-border,
 .line-border-bw {
     border-bottom: 2px solid var(--pgn-color-primary-base) !important;
 }
 
+
 /* Botones personalizados */
+
 .bw-btn-custom {
     background-color: var(--pgn-color-primary-base);
     color: var(--pgn-color-white);
     border-radius: var(--pgn-size-border-radius-base);
     transition: background-color 0.2s ease-in-out;
-
     &:hover {
         background-color: var(--pgn-color-primary-700);
     }
@@ -55,15 +60,19 @@
     border-color: var(--pgn-color-secondary-base) !important;
 }
 
+
 /* Iconos / Lupa con hover secundario */
+
 .bw-btn-icon,
 .btn-icon-bw {}
+
 
 /* === [BW CUSTOM] Selector de Idioma Global Inicio ===
    Componentes donde se aplica:
    - Plugin Global: bluewave_language_selector.py (env.config.jsx)
    - Componente MFE: BwLanguageSelector (bajo el Header a la derecha)
 */
+
 .bw-lang-selector-bar {
     display: flex;
     justify-content: flex-end;
@@ -81,14 +90,12 @@
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-
     &:hover,
     &:focus {
         background-color: var(--pgn-color-secondary-base) !important;
         border-color: var(--pgn-color-secondary-base) !important;
         outline: none;
     }
-
     option {
         background-color: var(--pgn-color-white);
         color: var(--pgn-color-primary-base);
@@ -105,8 +112,8 @@
     color: var(--pgn-color-body-base) !important;
 }
 
-/* === [BW CUSTOM] Selector de Idioma Global Fin === */
 
+/* === [BW CUSTOM] Selector de Idioma Global Fin === */
 
 // =============================================================================
 // 2. OVERRIDES GLOBALES DE PARAGON Y COMPONENTES COMPARTIDOS (Sin tocar JSX)
@@ -114,7 +121,10 @@
 // =============================================================================
 
 /* === Menú de usuario Inicio (@edx/frontend-component-header) === */
+
+
 /* Limitar longitud del nombre de usuario en el botón del Header a ~16 caracteres con "..." */
+
 button.menu-trigger {
     display: inline-block !important;
     position: relative;
@@ -124,12 +134,10 @@ button.menu-trigger {
     white-space: nowrap !important;
     vertical-align: middle;
     padding-right: 1.75rem !important;
-
     .avatar {
         vertical-align: middle;
     }
-
-    > svg {
+    >svg {
         position: absolute;
         right: 0.5rem;
         top: 50%;
@@ -137,11 +145,12 @@ button.menu-trigger {
     }
 }
 
+
 /* Ítem seleccionado con color secundario (ej. Go back to Blue Wave) */
+
 .dropdown-item {
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
-
     &.active,
     &:active,
     &.bw-menu-secondary {
@@ -150,19 +159,20 @@ button.menu-trigger {
     }
 }
 
+
 /* === Menú de usuario Fin === */
 
+
 /* Sobrescribir los estilos del HELP y ocultar Sign Up en el HEADER */
+
 .secondary-menu-container {
     .nav-link {
         color: var(--pgn-color-gray-700) !important;
         margin-right: 1rem;
     }
-
     .nav-link:hover {
         color: var(--png-color-active, #fff) !important;
     }
-
     /* Ocultar opción de Sign Up / Registrarse sin depender del texto (multi-idioma) */
     a[href*="/register"],
     a.btn-outline-primary {
@@ -170,12 +180,16 @@ button.menu-trigger {
     }
 }
 
+
 /* Ocultar también el enlace de registro en el header móvil si aplica */
+
 .site-header-mobile a[href*="/register"] {
     display: none !important;
 }
 
+
 /*Sobre escribir el tamaño del logo del header*/
+
 .logo {
     padding: 0px !important;
 }
@@ -184,10 +198,12 @@ button.menu-trigger {
     height: 3rem !important;
 }
 
+
 /* =============================================================================
    Footer Compartido (@edx/frontend-component-footer)
    Texto legal y copyright institucional de Blue Wave ubicado debajo de los logos
    ============================================================================= */
+
 .footer {
     display: flex !important;
     flex-direction: column !important;
@@ -195,16 +211,13 @@ button.menu-trigger {
     text-align: center !important;
     padding-top: 0.4rem !important;
     padding-bottom: 0.4rem !important;
-
     .container-fluid {
         order: 1;
         width: 100%;
-
         img {
             max-height: 80px !important;
         }
     }
-
     &::before {
         order: 2;
         content: "Copyright © 2026 Blue Wave International SDP Corporation. All Rights Reserved.";
@@ -218,7 +231,6 @@ button.menu-trigger {
         width: 100%;
         line-height: 1.25;
     }
-
     &::after {
         order: 3;
         content: "Blue Wave International SDP Corporation is the sole and exclusive owner of all rights, title, and interest in and to the Materials of the Blue Wave Supplier Development Program, including all Intellectual Property Rights. The Materials of the Blue Wave Supplier Development Program, including any methodologies, documents, presentations, self-assessment tools, workshops, video recordings, website content, and designs are protected by copyright under the U.S. copyright laws and are the intellectual property of Blue Wave International SDP Corporation. Customers shall have no right or license to use any Blue Wave Supplier Development Program Materials except solely during the term of the agreement. All other rights in and to the Blue Wave Supplier Development Program Materials are expressly reserved by Blue Wave International SDP Corporation.";
@@ -238,18 +250,20 @@ button.menu-trigger {
 // 3. OVERRIDES POR MFE (Clases nativas de cada MFE - Sin tocar JSX)
 // Uso: Cada bloque agrupa las clases nativas propias de ese MFE.
 // =============================================================================
-
 // -----------------------------------------------------------------------------
 // 3.1 MFE: Learner Dashboard (frontend-app-learner-dashboard)
 // -----------------------------------------------------------------------------
 
 /* Deshabilitar la línea gris inferior (box-shadow) del header en escritorio */
+
 .site-header-desktop {
     box-shadow: none !important;
 }
 
+
 /* Botón "Workshops" en la navegación principal del Header (.main-nav):
    Quitar el recuadro de fondo azul y mostrar la línea inferior amarilla (#FCB415) */
+
 .site-header-desktop .main-nav {
     .nav-link {
         background: transparent !important;
@@ -257,7 +271,6 @@ button.menu-trigger {
         color: #313131 !important;
         border-bottom: 4px solid transparent;
     }
-
     .expanded .nav-link,
     .nav-link.active,
     .nav-link:focus,
@@ -269,32 +282,36 @@ button.menu-trigger {
     }
 }
 
+
 /* Título principal de lista ("My Workshops") - CoursesPanel */
+
 .course-list-title {}
+
 
 /* Título de cada tarjeta de taller - CourseCardTitle
    Nota: .course-card-title es la clase nativa; se mantiene .bw-card-title por compatibilidad */
+
 a.course-card-title,
 .course-card-title,
 .bw-card-title {
     color: var(--pgn-color-primary-base);
     font-family: 'Calibri', sans-serif;
     font-size: 24px !important;
-
     &:hover {
         color: var(--pgn-color-secondary-base);
     }
 }
 
+
 /* Botones de acción en tarjetas de taller - CourseCardActions
    Acotado a las tarjetas (.course-card) para no afectar headers u otros MFEs */
+
 .course-card .pgn__action-row,
 .course-card-actions {
     a {
         background-color: var(--pgn-color-primary-base) !important;
         color: var(--pgn-color-white) !important;
         border-color: var(--pgn-color-primary-base) !important;
-
         &:hover {
             background-color: var(--pgn-color-secondary-base) !important;
             border-color: var(--pgn-color-secondary-base) !important;
@@ -302,11 +319,9 @@ a.course-card-title,
     }
 }
 
-
 // -----------------------------------------------------------------------------
 // 3.2 MFE: Learning / Courseware (frontend-app-learning) - [Futuro]
 // -----------------------------------------------------------------------------
-
 //Eliminar el padding de la barra azul para dejarlo más pequeño
 [data-testid="instructor-toolbar"],
 .instructor-toolbar {
@@ -326,7 +341,6 @@ a.course-card-title,
 
 // Cambiar el color de la línea al seleccionar una tab en los cursos (course tools)
 .nav-link {
-
     &:hover,
     &:focus,
     &.active {
@@ -353,19 +367,17 @@ a.course-card-title,
 
 //OCULTAR barra gris
 .course-tabs-navigation .nav {
-  a:hover,
-  a:not(.active):hover,
-  button:hover {
-    background-color: transparent !important;
-    border-bottom: none !important;
-  }
+    a:hover,
+    a:not(.active):hover,
+    button:hover {
+        background-color: transparent !important;
+    }
 }
 
 // -----------------------------------------------------------------------------
 // 3.3 MFE: Authoring / Studio (frontend-app-authoring)
 // -----------------------------------------------------------------------------
 #root .studio-header {
-
     header.pgn__action-row a,
     .pgn__action-row a,
     .course-title-lockup,
@@ -376,7 +388,6 @@ a.course-card-title,
         box-shadow: none !important;
         color: inherit !important;
         text-decoration: none !important;
-
         &:hover,
         &:focus {
             background: transparent !important;
@@ -388,7 +399,6 @@ a.course-card-title,
         }
     }
 }
-
 
 // -----------------------------------------------------------------------------
 // 3.3 Catalog/Landing Page
@@ -407,7 +417,6 @@ a.course-card-title,
 .has-focus {
     border-color: var(--pgn-color-primary-base) !important;
 }
-
 
 // Fondo del cuadro principal (usando la variable nativa del MFE)
 :root {
@@ -438,4 +447,3 @@ a.course-card-title,
 // -----------------------------------------------------------------------------
 // 3.3 MFE: Account / Profile (frontend-app-account / profile) - [Futuro]
 // -----------------------------------------------------------------------------
-
