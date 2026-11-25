@@ -450,3 +450,43 @@ a.course-card-title,
 // -----------------------------------------------------------------------------
 // 3.3 MFE: Account / Profile (frontend-app-account / profile) - [Futuro]
 // -----------------------------------------------------------------------------
+
+/* Desactivar visualmente y bloquear clics en todos los botones sensibles de
+   Configuración de cuenta (Editar, Restablecer contraseña, Auth0 vinculado,
+   Eliminar mi cuenta y acciones inline) */
+
+.page__account-settings .account-section button,
+.page__account-settings .account-section .pgn__stateful-btn,
+.page__account-settings .account-section [data-testid="editable-field-edit"],
+.page__account-settings .account-section [data-provider-id="oa2-auth0"],
+.page__account-settings #delete-account button.btn-outline-danger {
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+    opacity: 0.45 !important;
+    user-select: none !important;
+}
+
+
+/* Ocultar por completo botones o secciones específicas si se requiere
+   (descomentar según necesidad) */
+
+.page__account-settings #basic-information button,
+.page__account-settings #profile-information button,
+.page__account-settings #social-media button,
+.page__account-settings #site-preferences button {
+    display: none !important;
+}
+
+.page__account-settings #basic-information .pgn__stateful-btn {
+    display: none !important;
+}
+
+.page__account-settings #linked-accounts [data-provider-id="oa2-auth0"],
+.page__account-settings #linked-accounts .pgn__stateful-btn {
+    display: none !important;
+}
+
+.page__account-settings #delete-account button.btn-outline-danger,
+.page__account-settings #delete-account {
+    display: none !important;
+}
